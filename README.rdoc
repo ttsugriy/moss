@@ -5,23 +5,23 @@ moss was written by Ray Ontko and Alexander Reeder with advice from Andrew S. Ta
 
 Send comments, suggestions, enhancements to Ray Ontko (rayo@ontko.com).
 
-= Install
+== Install
 
-It is highly recommended to build and run this project using <a href="http://maven.apache.org/index.html">Apache Maven</a> project management and comprehension tool.
-<a href="http://maven.apache.org/download.html">Download and install</a>.
+It is highly recommended to build and run this project using {Apache Maven}[http://maven.apache.org] project management and comprehension tool.
+{Download and install.}[http://maven.apache.org/download.html]
 
 
-= Build
+== Build
 
 Go to moss directory
-<pre>cd /path/to/moss_dir</pre>
+    cd /path/to/moss_dir
 Build project using Maven
-<pre>mvn clean install</pre>
+    mvn clean install
 
 
 = Run
 
-<pre>mvn exec:java -Dexec.mainClass="com.ontko.moss.MemoryManagement" -Dexec.args="commands memory.conf"</pre>
+    mvn exec:java -Dexec.mainClass="com.ontko.moss.MemoryManagement" -Dexec.args="commands memory.conf"
 
 
 ----------
