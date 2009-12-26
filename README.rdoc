@@ -11,6 +11,7 @@ Version hosted here contains some modifications, comparing to original version. 
 * added ability to choose replacement algorithm
 * some refactoring of user interface code
 * fixed incorrect mapping of physical and virtual pages
+* switched UI from awt to swing
 
 == Install
 
