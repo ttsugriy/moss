@@ -18,6 +18,11 @@
       <developer>
           <name>Alexander Reeder</name>
       </developer>
+      <developer>
+          <name>Taras Tsugriy</name>
+          <organization>Taras Schevchenko Kiev National University</ortanization>
+          <email>taras.tsugriy@gmail.com</email>
+      </developer>
   </developers>
   <dependencies>
     <dependency>
