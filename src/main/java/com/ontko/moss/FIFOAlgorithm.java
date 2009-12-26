@@ -8,33 +8,17 @@ public class FIFOAlgorithm extends ReplacementAlgorithm {
 
     public int getPageToReplace( List<Page> mem, int virtPageNum ) {
 
-		int count = 0;
-		int oldestPage = -1;
-		int oldestTime = 0;
-		int firstPage = -1;
-		int map_count = 0;
-		boolean mapped = false;
+        int oldestPage = -1;
+        int oldestTime = -1;
 
-        while (!(mapped) || count != virtPageNum) {
-            Page page = mem.get(count);
-            if (page.physical != -1) {
-                if (firstPage == -1) {
-                    firstPage = count;
-                }
-                if (page.inMemTime > oldestTime) {
-                    oldestTime = page.inMemTime;
-                    oldestPage = count;
-					mapped = true;
-				}
-			}
-			count++;
-			if (count == virtPageNum) {
-				mapped = true;
-			}
-		}
-		if (oldestPage == -1) {
-			oldestPage = firstPage;
-		}
+        for (int i = 0; i < mem.size(); i++) {
+            Page page = mem.get(i);
+            if (page.physical != -1 && page.inMemTime > oldestTime) {
+                oldestPage = i;
+                oldestTime = page.inMemTime;
+            }
+        }
+
         return oldestPage;
     }
 }
