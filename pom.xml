@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ontko</groupId>
+  <artifactId>moss</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>moss</name>
+  <url>http://www.ontko.com/moss</url>
+  <description>moss (Modern Operating Systems Simulators) is a collection of Java-based simulation programs which illustrate key concepts presented in the text Andrew S. Tanenbaum,   Modern Operating System, Second Edition (Prentice-Hall, 2001). The software is designed for students and instructors using this text. Additional supplemental material for this and other Tanenbaum texts is available from the author's site.</description>
+  <developers>
+      <developer>
+          <name>Ray Ontko</name>
+          <organization>Ray Ontko &amp; Company</organization>
+          <organizationUrl>http://www.ontko.com</organizationUrl>
+          <email>rayo@ontko.com</email>
+      </developer>
+      <developer>
+          <name>Alexander Reeder</name>
+      </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.7</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>2.0.2</version>
+              <configuration>
+                  <source>1.5</source>
+                  <target>1.5</target>
+              </configuration>
+          </plugin>
+      </plugins>
+  </build>
+</project>
