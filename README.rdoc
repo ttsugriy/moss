@@ -27,6 +27,10 @@ Build project using Maven
 
     mvn exec:java -Dexec.mainClass="com.ontko.moss.MemoryManagement" -Dexec.args="commands memory.conf"
 
+== Development
+
+Recent changes made to this program were made by Taras Tsugriy. So in case you have any questions about changes made in this version you can contact me.
+
 ----------
 
 Java is a trademark of Sun Microsystems, Inc., and refers to Sun's Java programming language technology. moss is not sponsored by or affiliated with Sun Microsystems, Inc.
