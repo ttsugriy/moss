@@ -10,6 +10,7 @@ Version hosted here contains some modifications, comparing to original version. 
 * switch to generic Vector
 * added ability to choose replacement algorithm
 * some refactoring of user interface code
+* fixed incorrect mapping of physical and virtual pages
 
 == Install
 
