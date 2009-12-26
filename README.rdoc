@@ -12,10 +12,11 @@ The memory management simulator illustrates page fault behavior in a paged virtu
 Version hosted here contains some modifications, comparing to original version. Among them:
 * fixed all warnings (mostly deprecations)
 * switch to generic Vector
-* added ability to choose replacement algorithm
+* added ability to choose replacement algorithm and added Round Robin and LRU implementations
 * some refactoring of user interface code
 * fixed incorrect mapping of physical and virtual pages
 * switched UI from awt to swing
+* rewritten FIFO algorithm
 
 === Balady's anomaly simulation
 
