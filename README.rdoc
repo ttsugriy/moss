@@ -17,6 +17,7 @@ Version hosted here contains some modifications, comparing to original version. 
 * fixed incorrect mapping of physical and virtual pages
 * switched UI from awt to swing
 * rewritten FIFO algorithm
+* added Balady's anomaly simulation config files
 
 === Balady's anomaly simulation
 
