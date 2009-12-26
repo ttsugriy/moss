@@ -5,11 +5,16 @@ moss was written by Ray Ontko and Alexander Reeder with advice from Andrew S. Ta
 
 Send comments, suggestions, enhancements to Ray Ontko (rayo@ontko.com).
 
+Version hosted here contains some modifications, comparing to original version. Among them:
+* fixed all warnings (mostly deprecations)
+* switch to generic Vector
+* added ability to choose replacement algorithm
+* some refactoring of user interface code
+
 == Install
 
 It is highly recommended to build and run this project using {Apache Maven}[http://maven.apache.org] project management and comprehension tool.
 {Download and install.}[http://maven.apache.org/download.html]
-
 
 == Build
 
@@ -18,11 +23,9 @@ Go to moss directory
 Build project using Maven
     mvn clean install
 
-
 = Run
 
     mvn exec:java -Dexec.mainClass="com.ontko.moss.MemoryManagement" -Dexec.args="commands memory.conf"
-
 
 ----------
 
