@@ -5,6 +5,8 @@ moss was written by Ray Ontko and Alexander Reeder with advice from Andrew S. Ta
 
 Send comments, suggestions, enhancements to Ray Ontko (rayo@ontko.com).
 
+Moss project is published here with the permission of Ray Ontko.
+
 == Memory Management (Chapter 4)
 
 The memory management simulator illustrates page fault behavior in a paged virtual memory system. The program reads the initial state of the page table and a sequence of virtual memory instructions and writes a trace log indicating the effect of each instruction. It includes a graphical user interface so that students can observe page replacement algorithms at work. Students may be asked to implement a particular page replacement algorithm which the instructor can test by comparing the output from the student's algorithm to that produced by a working implementation.
@@ -23,6 +25,10 @@ Version hosted here contains some modifications, comparing to original version. 
 
 In files memoryBA1.conf memoryBA2.conf and commandsBA simulated situation described at {wiki page}[http://en.wikipedia.org/wiki/Belady's_anomaly] where one can clearly see Balady's anomaly.
 
+=== More information
+
+You can find a lot more information at the {official page}[http://www.ontko.com/moss] of the Moss project.
+
 == Install
 
 It is highly recommended to build and run this project using {Apache Maven}[http://maven.apache.org] project management and comprehension tool.
@@ -37,6 +43,10 @@ Build project using Maven
 
 = Run
 
+Usage
+    mvn exec:java -Dexec.mainClass="com.ontko.moss.MemoryManagement" -Dexec.args="<commands_file> <memory_configuration_file>"
+
+For example,
     mvn exec:java -Dexec.mainClass="com.ontko.moss.MemoryManagement" -Dexec.args="commands memory.conf"
 
 === Notes
@@ -46,6 +56,10 @@ Build project using Maven
 == Development
 
 Recent changes made to this program were made by Taras Tsugriy. So in case you have any questions about changes made in this version you can contact me.
+
+== License
+
+:include: LICENSE
 
 ----------
 
