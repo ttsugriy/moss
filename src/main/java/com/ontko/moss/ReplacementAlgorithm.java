@@ -13,4 +13,12 @@ public abstract class ReplacementAlgorithm {
     }
 
     public abstract int getPageToReplace (List<Page> pages, int virtPageNum);
+
+    protected int getNumberOfPhysicalPages(List<Page> mem ) {
+        int count = 0;
+        for (Page page : mem)
+            if (page.physical != -1)
+                count++;
+        return count;
+    }
 }
