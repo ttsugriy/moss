@@ -39,6 +39,10 @@ Build project using Maven
 
     mvn exec:java -Dexec.mainClass="com.ontko.moss.MemoryManagement" -Dexec.args="commands memory.conf"
 
+=== Notes
+
+* Because of the Round Robin algorithm particularities it's necessary to map all physical pages starting from 0  successively.
+
 == Development
 
 Recent changes made to this program were made by Taras Tsugriy. So in case you have any questions about changes made in this version you can contact me.
